@@ -1,0 +1,40 @@
+/* CheckNGo — page-level layout styles (site-wide, non-token) */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(23,23,23,0.6), rgba(23,23,23,0.95)),
+              url('/checkngo/assets/images/city-login.jpg') center/cover no-repeat;
+  padding: 1rem;
+}
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem;
+}
+.auth-card .form-control {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--pure-white);
+}
+.auth-card .form-control:focus {
+  background: var(--glass);
+  color: var(--pure-white);
+  border-color: var(--highlight);
+  box-shadow: none;
+}
+.auth-card .form-control::placeholder { color: var(--text-muted); }
+
+.readiness-ring {
+  width: 120px; height: 120px;
+}
+
+.dashboard-hero {
+  min-height: 260px;
+  background-image: linear-gradient(180deg, rgba(23,23,23,0.35), rgba(23,23,23,0.9)),
+                     url('/checkngo/assets/images/city-dashboard.jpg');
+  background-size: cover;
+  background-position: center;
+}

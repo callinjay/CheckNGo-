@@ -1,0 +1,14 @@
+/* CheckNGo — responsive overrides */
+
+@media (max-width: 575px) {
+  .auth-card { padding: 1.75rem; border-radius: 20px; }
+  .dashboard-hero { padding: 1.25rem !important; min-height: 200px; }
+  h1, .h1 { font-size: 1.6rem; }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .main-content { padding: 1.25rem 1.5rem; }
+}
+
+/* Ensure checklist rows never force horizontal scroll on narrow screens */
+.check-item { flex-wrap: wrap; gap: 0.5rem; }
